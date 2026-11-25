@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fifaliana RAHANJANIRAINY – Développeur en formation</title>
+<meta name="description" content="Portfolio de Fifaliana RAHANJANIRAINY, étudiant en Génie Logiciel (L2) à Antsirabe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#accueil" class="logo">Fifaliana<span>.</span></a>
+  <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#apropos">À propos</a>
+    <a href="#competences">Compétences</a>
+    <a href="#langues">Langues</a>
+    <a href="#contact" class="btn-small">Me contacter</a>
+  </nav>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="hero-text">
+    <p class="hello">Bonjour, je suis</p>
+    <h1>Fifaliana<br>RAHANJANIRAINY</h1>
+    <p class="typing">Étudiant en <span id="typed"></span><b class="cursor">|</b></p>
+    <p class="lead">Je suis en L2 Génie Logiciel. Je cherche un stage ou un petit projet pour mettre en pratique ce que j’apprends.</p>
+    <div class="actions">
+      <a href="#contact" class="btn">Me contacter</a>
+      <a href="#competences" class="btn ghost">Voir mes compétences</a>
+    </div>
+  </div>
+  <div class="code-card" aria-hidden="true">
+    <div class="dots"><i></i><i></i><i></i></div>
+<pre><code><span class="k">const</span> moi = {
+  nom: <span class="s">"Fifaliana"</span>,
+  ville: <span class="s">"Antsirabe"</span>,
+  niveau: <span class="s">"L2 Génie Logiciel"</span>,
+  motivé: <span class="k">true</span>
+};</code></pre>
+  </div>
+</section>
+
+<section id="apropos" class="section">
+  <h2>À propos de moi</h2>
+  <div class="about">
+    <p>Je m’appelle <strong>Fifaliana</strong>. J’habite à <strong>Antsirabe</strong>. J’étudie l’informatique, en <strong>Génie Logiciel</strong>, niveau <strong>L2</strong>.</p>
+    <p>J’aime créer des sites web et des programmes. Je suis sérieux, curieux et j’apprends vite. Je veux trouver un travail ou un projet où je peux progresser.</p>
+  </div>
+</section>
+
+<section id="competences" class="section alt">
+  <h2>Mes compétences</h2>
+  <div class="marquee" aria-label="Liste de mes compétences">
+    <div class="track" data-items="HTML|Structure des pages web;CSS|Beau design responsive;JavaScript|Sites vivants et interactifs;Java POO|Classes et objets"></div>
+  </div>
+  <div class="marquee">
+    <div class="track rev" data-items="Python|Programmes simples et utiles;PHP|Partie serveur d’un site;C#|Applications;SQL|Bases de données"></div>
+  </div>
+</section>
+
+<section id="langues" class="section">
+  <h2>Langues</h2>
+  <div class="langs">
+    <div class="lang"><h3>Malagasy</h3><p>Langue maternelle</p><div class="bar"><span data-w="100"></span></div></div>
+    <div class="lang"><h3>Français</h3><p>Écrit et parlé</p><div class="bar"><span data-w="85"></span></div></div>
+    <div class="lang"><h3>Anglais</h3><p>Niveau intermédiaire</p><div class="bar"><span data-w="60"></span></div></div>
+  </div>
+</section>
+
+<section id="contact" class="section alt">
+  <h2>Contactez-moi</h2>
+  <p class="center">Vous avez un travail ou un projet pour moi ? Écrivez-moi !</p>
+  <div class="contact-grid">
+    <div class="infos">
+      <p><b>Téléphone</b><a href="tel:+261336376299">033 63 762 99</a></p>
+      <p><b>Email</b><a href="mailto:rahanjanirainy.fif@zircher.edu.mg">rahanjanirainy.fif@zircher.edu.mg</a></p>
+      <p><b>Adresse</b>Antsirabe, Madagascar</p>
+    </div>
+    <form id="form" novalidate>
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <label>Votre nom<input type="text" name="name" required placeholder="Ex : Rakoto Jean"></label>
+      <label>Votre email<input type="email" name="email" required placeholder="exemple@mail.com"></label>
+      <label>Votre message<textarea name="message" rows="5" required placeholder="Écrivez votre message ici..."></textarea></label>
+      <button type="submit" class="btn">Envoyer le message</button>
+      <p id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Fifaliana RAHANJANIRAINY – Antsirabe</footer>
+<script src="script.js"></script>
+</body>
+</html>
